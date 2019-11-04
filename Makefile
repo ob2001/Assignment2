@@ -1,3 +1,5 @@
+all: findWords wordBag
+
 textRW: textRW.c
 	gcc -ansi -Wall -o textRW textRW.c
 
@@ -30,5 +32,8 @@ reduceSpace.o: reduceSpace.c
 
 trim.o: trim.c
 	gcc -ansi -Wall -c trim.c
+
+clean:
+	-rm *.o $(objects) findWords wordBag
 
 
