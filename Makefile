@@ -35,5 +35,3 @@ trim.o: trim.c
 
 clean:
 	-rm *.o $(objects) findWords wordBag
-
-
